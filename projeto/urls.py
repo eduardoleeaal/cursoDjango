@@ -19,5 +19,5 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     # Puxa os urls do app recipes, formato de aninhamento
-    path('recipes/', include('recipes.urls'))
+    path('', include('recipes.urls'))
 ]

@@ -1,0 +1,36 @@
+Utilização de uma virtualenv ajuda a organizar seu projeto deixando apenas uma versão de python e django
+para criar uma virtualenv utilize:
+
+    ```python -m venv venv```
+
+depois é preciso ativar o ambiente, utilizando:
+
+    ```.\venv\Scripts\activate ```
+
+após isto é necessario instalar o django utilizando:
+
+    ```pip install django```
+
+iniciar um projeto django
+
+    ```django-admin startproject projeto .```
+
+em um projeto django podemos encontrar varios arquivos, dentre os principais:
+
+- settings.py   : toda a configuração do seu projeto django, utilizado para cadastrar apps
+                  cadastrar onde ficam os templates
+- urls.py       : responsavel por pegar as views do seu app e redirecionar/renderizar em um url
+
+iniciar o projeto pela primeira vez:
+
+    ```py ./manage.py runserver```
+
+criar um app:
+
+    ```py ./manage.py createapp nome_app```
+
+em um app podemos encontrar os seguintes arquivos:
+
+- views.py      : onde fica registrado todos as views para redirecionar o usuario
+
+deve-se criar uma pasta chamada "templates" para organizar todos os templates html-django

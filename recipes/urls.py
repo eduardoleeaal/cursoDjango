@@ -2,7 +2,7 @@ from django.urls import path
 
 from recipes.views import about_me, my_contact, my_home
 
-# URLS SERÃO NO PADRÃO: site.com/recipes/final_do_URL
+# URLS SERÃO NO PADRÃO: site.com/final_do_URL
 urlpatterns = [
     path('', my_home),  # Home
     path('contact/', my_contact),  # Contact
